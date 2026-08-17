@@ -1,6 +1,6 @@
 def somar_numeros():
     # Bug 1: O acumulador começa em 1 (neutro da multiplicação) em vez de 0
-    total = 1
+    total = 0
     
     print("Digite números para somar (digite '0' para encerrar):")
     
@@ -13,7 +13,7 @@ def somar_numeros():
         numero = float(entrada)
         
         # Bug 2: Utiliza multiplicação (*) em vez de adição (+)
-        total *= numero
+        total += numero
         
     print(f"O resultado total da soma é: {total}")
 
